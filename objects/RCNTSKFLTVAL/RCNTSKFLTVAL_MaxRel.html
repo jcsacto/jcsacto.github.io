@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="../../css/style.maxrel.css">
+<title>RCNTSKFLTVAL Maximo Relationships</title>
+</head>
+<body>
+<div id="container">
+    <div id="menu01">
+        <ul class="navbar">
+            <li><a href="../../index.html">Table List</a>
+            <li><a href="RCNTSKFLTVAL.html">RCNTSKFLTVAL</a>
+            <li><a href="RCNTSKFLTVAL_print.html">Printer View</a>
+            <li><a href="RCNTSKFLTVAL_ER.dbc">Script of Unverified</a>
+        </ul>
+    </div>
+    <div id="MaximoObjectsInfo">
+    </div>
+    <div id="MaximoRelationshipsInfo" style="overflow-y:scroll">
+    </div>
+</div>
+
+<script src="../../js/mo.js"></script>
+<script src="../../js/filtertable.js"></script>
+<script src="RCNTSKFLTVAL.js"></script>
+<script>
+window.onload = createInfo
+var mobjs = JSON.stringify(mos);
+var obj = JSON.parse(mobjs);
+
+function createInfo() {
+
+    createMaximoObjectInfo();
+
+    createRelationshipsInfo()
+
+    tablesLoaded = true;
+    filtertable.init();
+}
+
+
+</script>
+</body>
+</html>

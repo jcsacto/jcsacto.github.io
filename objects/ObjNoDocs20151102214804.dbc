@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE script SYSTEM "script.dtd">
+<script author="NAME?" scriptname="NoObjDocs">
+  <description>These objects aren't involved with any entity relationships and do not have documentation.</description>
+  <statements>
+    <modify_table name="ASTSPECMSOVER">
+      <longdescription>(enter explanation here)</longdescription>
+    </modify_table>
+    <modify_table name="DCLNODESINBV">
+      <longdescription>(enter explanation here)</longdescription>
+    </modify_table>
+    <modify_table name="DMCOLLPACKAGEMAP">
+      <longdescription>(enter explanation here)</longdescription>
+    </modify_table>
+    <modify_table name="DMCOLLRELRULECOLS">
+      <longdescription>(enter explanation here)</longdescription>
+    </modify_table>
+    <modify_table name="DMRESTRICTION">
+      <longdescription>(enter explanation here)</longdescription>
+    </modify_table>
+    <modify_table name="DPAMADAPTER">
+      <longdescription>(enter explanation here)</longdescription>
+    </modify_table>
+    <modify_table name="DPAMMANUFACTURER">
+      <longdescription>(enter explanation here)</longdescription>
+    </modify_table>
+    <modify_table name="DPAMOS">
+      <longdescription>(enter explanation here)</longdescription>
+    </modify_table>
+    <modify_table name="DPAMPROCESSOR">
+      <longdescription>(enter explanation here)</longdescription>
+    </modify_table>
+    <modify_table name="DPAMSOFTWARE">
+      <longdescription>(enter explanation here)</longdescription>
+    </modify_table>
+    <modify_table name="EXCLUDEPASSWORD">
+      <longdescription>(enter explanation here)</longdescription>
+    </modify_table>
+    <modify_table name="EXPFUNCTIONS">
+      <longdescription>(enter explanation here)</longdescription>
+    </modify_table>
+    <modify_table name="EXTNODESINASTLOCREL">
+      <longdescription>(enter explanation here)</longdescription>
+    </modify_table>
+    <modify_table name="FSNCLASS">
+      <longdescription>(enter explanation here)</longdescription>
+    </modify_table>
+    <modify_table name="FSNCLASSQUAL">
+      <longdescription>(enter explanation here)</longdescription>
+    </modify_table>
+    <modify_table name="FSNCLASSRELATION">
+      <longdescription>(enter explanation here)</longdescription>
+    </modify_table>
+    <modify_table name="FSNLASTSCAN">
+      <longdescription>(enter explanation here)</longdescription>
+    </modify_table>
+    <modify_table name="FSNMETHOD">
+      <longdescription>(enter explanation here)</longdescription>
+    </modify_table>
+    <modify_table name="FSNMETHODPARAM">
+      <longdescription>(enter explanation here)</longdescription>
+    </modify_table>
+    <modify_table name="FSNMTHDPARAMQUAL">
+      <longdescription>(enter explanation here)</longdescription>
+    </modify_table>
+    <modify_table name="FSNMTHDQUAL">
+      <longdescription>(enter explanation here)</longdescription>
+    </modify_table>
+    <modify_table name="FSNOBJECT">
+      <longdescription>(enter explanation here)</longdescription>
+    </modify_table>
+    <modify_table name="FSNOBJPROPERTY">
+      <longdescription>(enter explanation here)</longdescription>
+    </modify_table>
+    <modify_table name="FSNOBJRELATION">
+      <longdescription>(enter explanation here)</longdescription>
+    </modify_table>
+    <modify_table name="FSNPROPERTY">
+      <longdescription>(enter explanation here)</longdescription>
+    </modify_table>
+    <modify_table name="FSNPROPERTYQUAL">
+      <longdescription>(enter explanation here)</longdescription>
+    </modify_table>
+    <modify_table name="FSNPROVIDER">
+      <longdescription>(enter explanation here)</longdescription>
+    </modify_table>
+    <modify_table name="FSNQUALIFIER">
+      <longdescription>(enter explanation here)</longdescription>
+    </modify_table>
+    <modify_table name="FSNREFPROPERTY">
+      <longdescription>(enter explanation here)</longdescription>
+    </modify_table>
+    <modify_table name="FSNSCHEMA">
+      <longdescription>(enter explanation here)</longdescription>
+    </modify_table>
+    <modify_table name="FSNSQLCOLUMN">
+      <longdescription>(enter explanation here)</longdescription>
+    </modify_table>
+    <modify_table name="FSNSQLTABLE">
+      <longdescription>(enter explanation here)</longdescription>
+    </modify_table>
+    <modify_table name="FSNTABLEQUAL">
+      <longdescription>(enter explanation here)</longdescription>
+    </modify_table>
+    <modify_table name="IBMCONTENTCATALOG">
+      <longdescription>(enter explanation here)</longdescription>
+    </modify_table>
+    <modify_table name="IBMCONTENTRECEIPTS">
+      <longdescription>(enter explanation here)</longdescription>
+    </modify_table>
+    <modify_table name="IMPROFILE">
+      <longdescription>(enter explanation here)</longdescription>
+    </modify_table>
+    <modify_table name="KPIHISTORY">
+      <longdescription>(enter explanation here)</longdescription>
+    </modify_table>
+    <modify_table name="KPITRENDCFG">
+      <longdescription>(enter explanation here)</longdescription>
+    </modify_table>
+    <modify_table name="MASTERPMSEASONS">
+      <longdescription>(enter explanation here)</longdescription>
+    </modify_table>
+    <modify_table name="MASTERPMSEQ">
+      <longdescription>(enter explanation here)</longdescription>
+    </modify_table>
+    <modify_table name="MAXDATAPREFIX">
+      <longdescription>(enter explanation here)</longdescription>
+    </modify_table>
+    <modify_table name="MAXLICPRDKEYLIST">
+      <longdescription>(enter explanation here)</longdescription>
+    </modify_table>
+    <modify_table name="MAXLICSTATUS">
+      <longdescription>(enter explanation here)</longdescription>
+    </modify_table>
+    <modify_table name="MAXLICUSGSMRY">
+      <longdescription>(enter explanation here)</longdescription>
+    </modify_table>
+    <modify_table name="MAXLOGAPPENDER">
+      <longdescription>(enter explanation here)</longdescription>
+    </modify_table>
+    <modify_table name="MAXTESTFIX">
+      <longdescription>(enter explanation here)</longdescription>
+    </modify_table>
+    <modify_table name="MAXUSRDBAUTHINFO">
+      <longdescription>(enter explanation here)</longdescription>
+    </modify_table>
+    <modify_table name="MEA_DUMMY_TABLE">
+      <longdescription>(enter explanation here)</longdescription>
+    </modify_table>
+    <modify_table name="MXCOLLAB">
+      <longdescription>(enter explanation here)</longdescription>
+    </modify_table>
+    <modify_table name="MXCOLLABREF">
+      <longdescription>(enter explanation here)</longdescription>
+    </modify_table>
+    <modify_table name="NONWORKTIME">
+      <longdescription>(enter explanation here)</longdescription>
+    </modify_table>
+    <modify_table name="OSLCEXTMEDIATYPE">
+      <longdescription>(enter explanation here)</longdescription>
+    </modify_table>
+    <modify_table name="PRODUCTUPDATE">
+      <longdescription>(enter explanation here)</longdescription>
+    </modify_table>
+    <modify_table name="REPORTATTACHDOCS">
+      <longdescription>(enter explanation here)</longdescription>
+    </modify_table>
+    <modify_table name="REPORTBROSDPURL">
+      <longdescription>(enter explanation here)</longdescription>
+    </modify_table>
+    <modify_table name="REPORTBROSPARAM">
+      <longdescription>(enter explanation here)</longdescription>
+    </modify_table>
+    <modify_table name="REPORTDEPEND">
+      <longdescription>(enter explanation here)</longdescription>
+    </modify_table>
+    <modify_table name="REPORTEXPVALUE">
+      <longdescription>(enter explanation here)</longdescription>
+    </modify_table>
+    <modify_table name="REPORTFILEEXPORT">
+      <longdescription>(enter explanation here)</longdescription>
+    </modify_table>
+    <modify_table name="REPORTHYPERLINKQUERYURL">
+      <longdescription>(enter explanation here)</longdescription>
+    </modify_table>
+    <modify_table name="REPORTPARAM">
+      <longdescription>(enter explanation here)</longdescription>
+    </modify_table>
+    <modify_table name="REPORTSECATTKEY">
+      <longdescription>(enter explanation here)</longdescription>
+    </modify_table>
+    <modify_table name="SERVERSESSION">
+      <longdescription>(enter explanation here)</longdescription>
+    </modify_table>
+    <modify_table name="SERVICEOBJECT">
+      <longdescription>(enter explanation here)</longdescription>
+    </modify_table>
+    <modify_table name="SKDAPPLETEXT">
+      <longdescription>(enter explanation here)</longdescription>
+    </modify_table>
+    <modify_table name="SKDCOMPLIANCE">
+      <longdescription>(enter explanation here)</longdescription>
+    </modify_table>
+    <modify_table name="SKDCOMPLIANCEWOLIST">
+      <longdescription>(enter explanation here)</longdescription>
+    </modify_table>
+    <modify_table name="SKDCOST">
+      <longdescription>(enter explanation here)</longdescription>
+    </modify_table>
+    <modify_table name="SKDCOSTTEMP">
+      <longdescription>(enter explanation here)</longdescription>
+    </modify_table>
+    <modify_table name="SKDLABORHRS">
+      <longdescription>(enter explanation here)</longdescription>
+    </modify_table>
+    <modify_table name="SKDLABORHRSTEMP">
+      <longdescription>(enter explanation here)</longdescription>
+    </modify_table>
+    <modify_table name="SKDODMEMSG">
+      <longdescription>(enter explanation here)</longdescription>
+    </modify_table>
+    <modify_table name="SKDPMFOCOST">
+      <longdescription>(enter explanation here)</longdescription>
+    </modify_table>
+    <modify_table name="SKDPMFOCOSTTEMP">
+      <longdescription>(enter explanation here)</longdescription>
+    </modify_table>
+    <modify_table name="SKDRESOURCEVIEW">
+      <longdescription>(enter explanation here)</longdescription>
+    </modify_table>
+    <modify_table name="TABLEEXTTPLT">
+      <longdescription>(enter explanation here)</longdescription>
+    </modify_table>
+    <modify_table name="TAMITSWPRTNUM">
+      <longdescription>(enter explanation here)</longdescription>
+    </modify_table>
+    <modify_table name="TASKSCHEDULER">
+      <longdescription>(enter explanation here)</longdescription>
+    </modify_table>
+    <modify_table name="TDTVERSION">
+      <longdescription>(enter explanation here)</longdescription>
+    </modify_table>
+    <modify_table name="TLOAMFSNEVENTLISTENER">
+      <longdescription>(enter explanation here)</longdescription>
+    </modify_table>
+    <modify_table name="TLOAMFSNRUNSTATUS">
+      <longdescription>(enter explanation here)</longdescription>
+    </modify_table>
+    <modify_table name="WMMATCHCRW">
+      <longdescription>(enter explanation here)</longdescription>
+    </modify_table>
+  </statements>
+</script>

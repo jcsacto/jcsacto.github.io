@@ -1,0 +1,393 @@
+mos = {
+    "objectName": "DPACNETDEVCARD",
+    "className": "psdi.app.dpldasset.TheOneMboSet",
+    "description": "Deployed Assets Network Device Cards - Converted Make/Model and Manufacturer",
+    "longDescription": null,
+    "isView": true,
+    "isInternal": false,
+    "isPersistent": true,
+    "isMainObject": false,
+    "uniqueId": null,
+    "primaryKeyColumns": [
+        "CARDID"
+    ],
+    "logicalRelationships": [],
+    "targetLogicalRelationships": [
+        {
+            "objectName": "DEPLOYEDASSET",
+            "targetObject": "DPACNETDEVCARD",
+            "parentKeys": "NODEID",
+            "targetKeys": "NODEID",
+            "relNum": null,
+            "status": "INVALIDATED",
+            "description": "Relationship 10",
+            "longDescription": null
+        },
+        {
+            "objectName": "DPAMADPTVARIANT",
+            "targetObject": "DPACNETDEVCARD",
+            "parentKeys": "DPAMADPTVARIANTID",
+            "targetKeys": "DPAMADPTVARIANTID",
+            "relNum": "1 to many",
+            "status": "VERIFIED",
+            "description": "Adapter Variant",
+            "longDescription": null
+        },
+        {
+            "objectName": "DPAMMANUVARIANT",
+            "targetObject": "DPACNETDEVCARD",
+            "parentKeys": "DPAMMANUVARIANTID",
+            "targetKeys": "DPAMMANUVARIANTID",
+            "relNum": "1 to many",
+            "status": "VERIFIED",
+            "description": "Variant",
+            "longDescription": null
+        },
+        {
+            "objectName": "DPANETDEVCARD",
+            "targetObject": "DPACNETDEVCARD",
+            "parentKeys": "CARDID",
+            "targetKeys": "CARDID",
+            "relNum": "1 to many",
+            "status": "VERIFIED",
+            "description": "Deployed Network Device Card",
+            "longDescription": null
+        }
+    ],
+    "columns": [
+        {
+            "attributeName": "NODEID",
+            "required": true,
+            "persistent": true,
+            "title": "Node Id",
+            "remarks": "Node Id",
+            "sameAsAttribute": "NODEID",
+            "sameAsObject": "DEPLOYEDASSET",
+            "viewColumnName": "NODEID",
+            "tableName": "DPANETDEVCARD",
+            "tableColumnName": "NODEID"
+        },
+        {
+            "attributeName": "CARDID",
+            "required": true,
+            "persistent": true,
+            "title": "Card",
+            "remarks": "Card Id",
+            "sameAsAttribute": "CARDID",
+            "sameAsObject": "DPANETDEVCARD",
+            "viewColumnName": "CARDID",
+            "tableName": "DPANETDEVCARD",
+            "tableColumnName": "CARDID"
+        },
+        {
+            "attributeName": "TYPE",
+            "required": false,
+            "persistent": true,
+            "title": "Device Type",
+            "remarks": "Type",
+            "sameAsAttribute": "TYPE",
+            "sameAsObject": "DPANETDEVCARD",
+            "viewColumnName": "TYPE",
+            "tableName": "DPANETDEVCARD",
+            "tableColumnName": "TYPE"
+        },
+        {
+            "attributeName": "NETWORKADDRESS",
+            "required": false,
+            "persistent": true,
+            "title": "Network Address",
+            "remarks": "Network Address",
+            "sameAsAttribute": "NETWORKADDRESS",
+            "sameAsObject": "DPANETDEVCARD",
+            "viewColumnName": "NETWORKADDRESS",
+            "tableName": "DPANETDEVCARD",
+            "tableColumnName": "NETWORKADDRESS"
+        },
+        {
+            "attributeName": "NETMACADDR",
+            "required": false,
+            "persistent": true,
+            "title": "MAC Address",
+            "remarks": "Net MAC Address",
+            "sameAsAttribute": "NETMACADDR",
+            "sameAsObject": "DPANETDEVCARD",
+            "viewColumnName": "NETMACADDR",
+            "tableName": "DPANETDEVCARD",
+            "tableColumnName": "NETMACADDR"
+        },
+        {
+            "attributeName": "FIRMWAREVERSION",
+            "required": false,
+            "persistent": true,
+            "title": "Firmware Version",
+            "remarks": "Firmware Version",
+            "sameAsAttribute": "FIRMWAREVERSION",
+            "sameAsObject": "DPANETDEVCARD",
+            "viewColumnName": "FIRMWAREVERSION",
+            "tableName": "DPANETDEVCARD",
+            "tableColumnName": "FIRMWAREVERSION"
+        },
+        {
+            "attributeName": "RAMSIZE",
+            "required": false,
+            "persistent": true,
+            "title": "RAM Size",
+            "remarks": "RAM Size",
+            "sameAsAttribute": "RAMSIZE",
+            "sameAsObject": "DPANETDEVCARD",
+            "viewColumnName": "RAMSIZE",
+            "tableName": "DPANETDEVCARD",
+            "tableColumnName": "RAMSIZE"
+        },
+        {
+            "attributeName": "RAMUNIT",
+            "required": false,
+            "persistent": true,
+            "title": "RAM Unit",
+            "remarks": "RAM Unit",
+            "sameAsAttribute": "RAMUNIT",
+            "sameAsObject": "DPANETDEVCARD",
+            "viewColumnName": "RAMUNIT",
+            "tableName": "DPANETDEVCARD",
+            "tableColumnName": "RAMUNIT"
+        },
+        {
+            "attributeName": "CHIPSET",
+            "required": false,
+            "persistent": true,
+            "title": "Chipset",
+            "remarks": "Chip Set",
+            "sameAsAttribute": "CHIPSET",
+            "sameAsObject": "DPANETDEVCARD",
+            "viewColumnName": "CHIPSET",
+            "tableName": "DPANETDEVCARD",
+            "tableColumnName": "CHIPSET"
+        },
+        {
+            "attributeName": "BANDWIDTH",
+            "required": false,
+            "persistent": true,
+            "title": "Bandwidth",
+            "remarks": "Bandwidth",
+            "sameAsAttribute": "BANDWIDTH",
+            "sameAsObject": "DPANETDEVCARD",
+            "viewColumnName": "BANDWIDTH",
+            "tableName": "DPANETDEVCARD",
+            "tableColumnName": "BANDWIDTH"
+        },
+        {
+            "attributeName": "BANDWIDTHUNIT",
+            "required": false,
+            "persistent": true,
+            "title": "Bandwidth Unit",
+            "remarks": "Bandwidth Unit",
+            "sameAsAttribute": "BANDWIDTHUNIT",
+            "sameAsObject": "DPANETDEVCARD",
+            "viewColumnName": "BANDWIDTHUNIT",
+            "tableName": "DPANETDEVCARD",
+            "tableColumnName": "BANDWIDTHUNIT"
+        },
+        {
+            "attributeName": "SERIALNUMBER",
+            "required": false,
+            "persistent": true,
+            "title": "Serial Number",
+            "remarks": "Serial Number",
+            "sameAsAttribute": "SERIALNUMBER",
+            "sameAsObject": "DPANETDEVCARD",
+            "viewColumnName": "SERIALNUMBER",
+            "tableName": "DPANETDEVCARD",
+            "tableColumnName": "SERIALNUMBER"
+        },
+        {
+            "attributeName": "DESCRIPTION",
+            "required": false,
+            "persistent": true,
+            "title": "Description",
+            "remarks": "Description",
+            "sameAsAttribute": "DESCRIPTION",
+            "sameAsObject": "DPANETDEVCARD",
+            "viewColumnName": "DESCRIPTION",
+            "tableName": "DPANETDEVCARD",
+            "tableColumnName": "DESCRIPTION"
+        },
+        {
+            "attributeName": "ASSETTAG",
+            "required": false,
+            "persistent": true,
+            "title": "Asset Tag",
+            "remarks": "Asset Tag",
+            "sameAsAttribute": "ASSETTAG",
+            "sameAsObject": "DPANETDEVCARD",
+            "viewColumnName": "ASSETTAG",
+            "tableName": "DPANETDEVCARD",
+            "tableColumnName": "ASSETTAG"
+        },
+        {
+            "attributeName": "CREATEDATE",
+            "required": true,
+            "persistent": true,
+            "title": "Created Date",
+            "remarks": "Create Date",
+            "sameAsAttribute": "CREATEDATE",
+            "sameAsObject": "DPANETDEVCARD",
+            "viewColumnName": "CREATEDATE",
+            "tableName": "DPANETDEVCARD",
+            "tableColumnName": "CREATEDATE"
+        },
+        {
+            "attributeName": "CHANGEDATE",
+            "required": true,
+            "persistent": true,
+            "title": "Changed Date",
+            "remarks": "Change Date",
+            "sameAsAttribute": "CHANGEDATE",
+            "sameAsObject": "DPANETDEVCARD",
+            "viewColumnName": "CHANGEDATE",
+            "tableName": "DPANETDEVCARD",
+            "tableColumnName": "CHANGEDATE"
+        },
+        {
+            "attributeName": "VBANDWIDTH",
+            "required": false,
+            "persistent": false,
+            "title": "Bandwidth",
+            "remarks": "Bandwidth",
+            "sameAsAttribute": "VBANDWIDTH",
+            "sameAsObject": "DPANETDEVCARD"
+        },
+        {
+            "attributeName": "VRAMSIZE",
+            "required": false,
+            "persistent": false,
+            "title": "RAM Size",
+            "remarks": "RAM Size",
+            "sameAsAttribute": "VRAMSIZE",
+            "sameAsObject": "DPANETDEVCARD"
+        },
+        {
+            "attributeName": "CMANUFACTURER",
+            "required": true,
+            "persistent": true,
+            "title": "Manufacturer",
+            "remarks": "Manufacturer Name",
+            "sameAsAttribute": "MANUFACTURERNAME",
+            "sameAsObject": "DPAMMANUVARIANT",
+            "viewColumnName": "CMANUFACTURER",
+            "tableName": "DPAMMANUVARIANT",
+            "tableColumnName": "MANUFACTURERNAME"
+        },
+        {
+            "attributeName": "MANUFACTURER",
+            "required": true,
+            "persistent": true,
+            "title": "Manufacturer",
+            "remarks": "Manufacturer",
+            "sameAsAttribute": null,
+            "sameAsObject": null,
+            "viewColumnName": "MANUFACTURER",
+            "tableName": "DPANETDEVCARD",
+            "tableColumnName": "MANUFACTURER"
+        },
+        {
+            "attributeName": "MANUFACTURERVAR",
+            "required": true,
+            "persistent": true,
+            "title": "Manufacturer Variant",
+            "remarks": "Manufacturer Var",
+            "sameAsAttribute": "MANUFACTURERVAR",
+            "sameAsObject": "DPAMMANUVARIANT",
+            "viewColumnName": "MANUFACTURERVAR",
+            "tableName": "DPAMMANUVARIANT",
+            "tableColumnName": "MANUFACTURERVAR"
+        },
+        {
+            "attributeName": "DPAMMANUVARIANTID",
+            "required": true,
+            "persistent": true,
+            "title": "Manufacturer Variant Id",
+            "remarks": "Unique Identifier",
+            "sameAsAttribute": "DPAMMANUVARIANTID",
+            "sameAsObject": "DPAMMANUVARIANT",
+            "viewColumnName": "DPAMMANUVARIANTID",
+            "tableName": "DPAMMANUVARIANT",
+            "tableColumnName": "DPAMMANUVARIANTID"
+        },
+        {
+            "attributeName": "CMAKEMODEL",
+            "required": true,
+            "persistent": true,
+            "title": "Make/Model",
+            "remarks": "Adapter Name",
+            "sameAsAttribute": "ADAPTERNAME",
+            "sameAsObject": "DPAMADPTVARIANT",
+            "viewColumnName": "CMAKEMODEL",
+            "tableName": "DPAMADPTVARIANT",
+            "tableColumnName": "ADAPTERNAME"
+        },
+        {
+            "attributeName": "MAKEMODEL",
+            "required": true,
+            "persistent": true,
+            "title": "Make/Model",
+            "remarks": "Make/Model",
+            "sameAsAttribute": null,
+            "sameAsObject": null,
+            "viewColumnName": "MAKEMODEL",
+            "tableName": "DPANETDEVCARD",
+            "tableColumnName": "MAKEMODEL"
+        },
+        {
+            "attributeName": "ADAPTERVARIANT",
+            "required": true,
+            "persistent": true,
+            "title": "Adapter Variant",
+            "remarks": "Adapter Variant",
+            "sameAsAttribute": "ADAPTERVARIANT",
+            "sameAsObject": "DPAMADPTVARIANT",
+            "viewColumnName": "ADAPTERVARIANT",
+            "tableName": "DPAMADPTVARIANT",
+            "tableColumnName": "ADAPTERVARIANT"
+        },
+        {
+            "attributeName": "DPAMADPTVARIANTID",
+            "required": true,
+            "persistent": true,
+            "title": "Adapter Variant Id",
+            "remarks": "Unique Identifier",
+            "sameAsAttribute": "DPAMADPTVARIANTID",
+            "sameAsObject": "DPAMADPTVARIANT",
+            "viewColumnName": "DPAMADPTVARIANTID",
+            "tableName": "DPAMADPTVARIANT",
+            "tableColumnName": "DPAMADPTVARIANTID"
+        },
+        {
+            "attributeName": "SOURCEID1",
+            "required": false,
+            "persistent": true,
+            "title": "Source ID",
+            "remarks": "Source ID",
+            "sameAsAttribute": "SOURCEID1",
+            "sameAsObject": "DPANETDEVCARD",
+            "viewColumnName": "SOURCEID1",
+            "tableName": "DPANETDEVCARD",
+            "tableColumnName": "SOURCEID1"
+        }
+    ],
+    "viewinfo": {
+        "autosect": false,
+        "viewwhere": "dpanetdevcard.manufacturer=dpammanuvariant.manufacturervar and dpanetdevcard.makemodel=dpamadptvariant.adaptervariant",
+        "viewselect": "select dpanetdevcard.nodeid,dpanetdevcard.cardid,dpanetdevcard.type,dpanetdevcard.networkaddress,dpanetdevcard.netmacaddr, dpanetdevcard.firmwareversion,dpanetdevcard.ramsize,dpanetdevcard.ramunit,dpanetdevcard.chipset,dpanetdevcard.bandwidth, dpanetdevcard.bandwidthunit,dpanetdevcard.serialnumber,dpanetdevcard.makemodel,dpanetdevcard.manufacturer, dpanetdevcard.description,dpanetdevcard.assettag,dpanetdevcard.createdate,dpanetdevcard.changedate, dpanetdevcard.sourceid1, dpanetdevcard.rowstamp, dpammanuvariant.manufacturername as cmanufacturer,dpammanuvariant.manufacturervar,dpammanuvariant.dpammanuvariantid, dpammanuvariant.rowstamp as rowstamp1, dpamadptvariant.adaptername as cmakemodel,dpamadptvariant.adaptervariant, dpamadptvariant.dpamadptvariantid,dpamadptvariant.rowstamp as rowstamp2",
+        "viewfrom": "from dpanetdevcard,dpammanuvariant,dpamadptvariant"
+    },
+    "outgoingRelationships": [],
+    "incomingRelationships": [
+        {
+            "name": "DPANETDEVCARD",
+            "source": "DPANETDEVICE",
+            "remarks": null,
+            "whereClause": "nodeid=:nodeid",
+            "cardinality": "UNDEFINED"
+        }
+    ]
+}

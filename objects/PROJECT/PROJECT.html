@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="../../css/style.css">
+<title>PROJECT</title>
+</head>
+<body>
+<div id="container">
+    <div id="menu01">
+        <ul class="navbar">
+            <li><a href="../../index.html">Table List</a>
+            <li><a href="PROJECT_MaxRel.html">Maximo Relationships </a>
+            <li><a href="PROJECT_print.html">Printer View</a>
+            <li><a href="PROJECT_ER.dbc">Script of Unverified</a>
+        </ul>
+    </div>
+    <div id="MaximoObjectsInfo">
+    </div>
+    <div id="MaximoLogicalRelationshipsInfo"  style="overflow-y:scroll" >
+    </div>
+    <div id="MaximoObjectsColumnsInfo"  style="overflow-y:scroll" >
+    </div>
+</div>
+
+<script src="../../js/mo.js"></script>
+<script src="../../js/filtertable.js"></script>
+<script src="PROJECT.js"></script>
+<script>
+window.onload = createInfo
+var mobjs = JSON.stringify(mos);
+var obj = JSON.parse(mobjs);
+
+function createInfo() {
+
+    createMaximoObjectInfo();
+
+    createLogicalRelationshipInfo();
+
+    createColumnsInfo();
+
+    tablesLoaded = true;
+    filtertable.init();
+}
+
+
+</script>
+</body>
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="../../css/style.print.css">
+<title>CHANGECAPSTATUS Printer View</title>
+</head>
+<body>
+
+<p id="MaximoObjectsInfo">This will be replaced by generated data.</p>
+
+<p id="ViewInfo">This will be replaced by generated data.</p>
+
+<!-- Remove this line comments to expose the object notes.
+<p>
+<h4>Notes:</h4>
+Notes about this object go here....
+</p>
+-->
+
+<p id="MaximoLogicalRelationshipsInfo">This will be replaced by generated data.</p>
+
+
+<p id="MaximoObjectsColumnsInfo">This will be replaced by generated data.</p>
+
+<p id="MaximoRelationshipsInfo">This will be replaced by generated data.</p>
+
+<script src="../../js/mo.js"></script>
+<script src="../../js/filtertable.js"></script>
+<script src="CHANGECAPSTATUS.js"></script>
+<script>
+window.onload = createInfo
+var mobjs = JSON.stringify(mos);
+var obj = JSON.parse(mobjs);
+
+function createInfo() {
+
+    createMaximoObjectInfo();
+
+    createViewInfo();
+
+    createLogicalRelationshipInfo();
+
+    createColumnsInfo();
+
+    createRelationshipsInfo()
+
+    tablesLoaded = true;
+    filtertable.init();
+}
+
+
+</script>
+</body>
+</html>

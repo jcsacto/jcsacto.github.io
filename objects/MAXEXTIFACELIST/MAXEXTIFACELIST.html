@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="../../css/style.columns.css">
+<title>MAXEXTIFACELIST</title>
+</head>
+<body>
+<div id="container">
+    <div id="menu01">
+        <ul class="navbar">
+            <li><a href="../../index.html">Table List</a>
+            <li><a href="MAXEXTIFACELIST.html">No Maximo Relationships </a>
+            <li><a href="MAXEXTIFACELIST_print.html">Printer View</a>
+            <li><a href="MAXEXTIFACELIST_ER.dbc">Script of Unverified</a>
+        </ul>
+    </div>
+    <div id="MaximoObjectsInfo">
+    </div>
+    <div id="MaximoLogicalRelationshipsInfo"  style="overflow-y:scroll" >
+    </div>
+    <div id="MaximoObjectsColumnsInfo"  style="overflow-y:scroll" >
+    </div>
+</div>
+
+<script src="../../js/mo.js"></script>
+<script src="../../js/filtertable.js"></script>
+<script src="MAXEXTIFACELIST.js"></script>
+<script>
+window.onload = createInfo
+var mobjs = JSON.stringify(mos);
+var obj = JSON.parse(mobjs);
+
+function createInfo() {
+
+    createMaximoObjectInfo();
+
+    createLogicalRelationshipInfo();
+
+    createColumnsInfo();
+
+    tablesLoaded = true;
+    filtertable.init();
+}
+
+
+</script>
+</body>
+</html>

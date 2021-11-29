@@ -1,0 +1,372 @@
+mos = {
+    "objectName": "DPACNETADAPTER",
+    "className": "psdi.app.dpldasset.TheOneMboSet",
+    "description": "Deployed Assets Computers Network Adapters - Converted Make/Model and Manufacturer",
+    "longDescription": null,
+    "isView": true,
+    "isInternal": false,
+    "isPersistent": true,
+    "isMainObject": false,
+    "uniqueId": null,
+    "primaryKeyColumns": [
+        "ADAPTERID"
+    ],
+    "logicalRelationships": [],
+    "targetLogicalRelationships": [
+        {
+            "objectName": "DEPLOYEDASSET",
+            "targetObject": "DPACNETADAPTER",
+            "parentKeys": "NODEID",
+            "targetKeys": "NODEID",
+            "relNum": null,
+            "status": "INVALIDATED",
+            "description": "Relationship 9",
+            "longDescription": null
+        },
+        {
+            "objectName": "DPAMADPTVARIANT",
+            "targetObject": "DPACNETADAPTER",
+            "parentKeys": "DPAMADPTVARIANTID",
+            "targetKeys": "DPAMADPTVARIANTID",
+            "relNum": "1 to many",
+            "status": "VERIFIED",
+            "description": "Variant Adapter",
+            "longDescription": null
+        },
+        {
+            "objectName": "DPAMMANUVARIANT",
+            "targetObject": "DPACNETADAPTER",
+            "parentKeys": "DPAMMANUVARIANTID",
+            "targetKeys": "DPAMMANUVARIANTID",
+            "relNum": "1 to many",
+            "status": "VERIFIED",
+            "description": "Variant",
+            "longDescription": null
+        },
+        {
+            "objectName": "DPANETADAPTER",
+            "targetObject": "DPACNETADAPTER",
+            "parentKeys": "ADAPTERID",
+            "targetKeys": "ADAPTERID",
+            "relNum": "1 to many",
+            "status": "VERIFIED",
+            "description": "Deployed Net Adapter",
+            "longDescription": null
+        }
+    ],
+    "columns": [
+        {
+            "attributeName": "NODEID",
+            "required": true,
+            "persistent": true,
+            "title": "Node Id",
+            "remarks": "Node Id",
+            "sameAsAttribute": "NODEID",
+            "sameAsObject": "DEPLOYEDASSET",
+            "viewColumnName": "NODEID",
+            "tableName": "DPANETADAPTER",
+            "tableColumnName": "NODEID"
+        },
+        {
+            "attributeName": "ADAPTERID",
+            "required": true,
+            "persistent": true,
+            "title": "Adapter",
+            "remarks": "Adapter Id",
+            "sameAsAttribute": "ADAPTERID",
+            "sameAsObject": "DPANETADAPTER",
+            "viewColumnName": "ADAPTERID",
+            "tableName": "DPANETADAPTER",
+            "tableColumnName": "ADAPTERID"
+        },
+        {
+            "attributeName": "ADAPTERTYPE",
+            "required": false,
+            "persistent": true,
+            "title": "Adapter Type",
+            "remarks": "Type of network adapter. For physical adapters, this is Network Adapter. For virtual adapter connections, the adapter type is a descriptor for the virtual adapter, such as PPTP adapter or WAN adapter.",
+            "sameAsAttribute": "ADAPTERTYPE",
+            "sameAsObject": "DPANETADAPTER",
+            "viewColumnName": "ADAPTERTYPE",
+            "tableName": "DPANETADAPTER",
+            "tableColumnName": "ADAPTERTYPE"
+        },
+        {
+            "attributeName": "BANDWIDTH",
+            "required": false,
+            "persistent": true,
+            "title": "Bandwidth",
+            "remarks": "Adapter bandwidth. Bandwidth is the amount of data that can be transmitted in a given amount of time, measured in bits per second.",
+            "sameAsAttribute": "BANDWIDTH",
+            "sameAsObject": "DPANETADAPTER",
+            "viewColumnName": "BANDWIDTH",
+            "tableName": "DPANETADAPTER",
+            "tableColumnName": "BANDWIDTH"
+        },
+        {
+            "attributeName": "BANDWIDTHUNIT",
+            "required": false,
+            "persistent": true,
+            "title": "Bandwidth Unit",
+            "remarks": "Bandwidth Unit",
+            "sameAsAttribute": "BANDWIDTHUNIT",
+            "sameAsObject": "DPANETADAPTER",
+            "viewColumnName": "BANDWIDTHUNIT",
+            "tableName": "DPANETADAPTER",
+            "tableColumnName": "BANDWIDTHUNIT"
+        },
+        {
+            "attributeName": "PROTOCOL",
+            "required": false,
+            "persistent": true,
+            "title": "Protocol",
+            "remarks": "Type of adapter protocol (for example, Ethernet, wireless, etc.).",
+            "sameAsAttribute": "PROTOCOL",
+            "sameAsObject": "DPANETADAPTER",
+            "viewColumnName": "PROTOCOL",
+            "tableName": "DPANETADAPTER",
+            "tableColumnName": "PROTOCOL"
+        },
+        {
+            "attributeName": "PORT",
+            "required": false,
+            "persistent": true,
+            "title": "Port",
+            "remarks": "Port used by the adapter.",
+            "sameAsAttribute": "PORT",
+            "sameAsObject": "DPANETADAPTER",
+            "viewColumnName": "PORT",
+            "tableName": "DPANETADAPTER",
+            "tableColumnName": "PORT"
+        },
+        {
+            "attributeName": "NETMACADDR1",
+            "required": false,
+            "persistent": true,
+            "title": "MAC Address 1",
+            "remarks": "First MAC address for the network adapter. The MAC (Media Access Control) address uniquely identifies each node of a network.",
+            "sameAsAttribute": "NETMACADDR1",
+            "sameAsObject": "DPANETADAPTER",
+            "viewColumnName": "NETMACADDR1",
+            "tableName": "DPANETADAPTER",
+            "tableColumnName": "NETMACADDR1"
+        },
+        {
+            "attributeName": "NETMACADDR2",
+            "required": false,
+            "persistent": true,
+            "title": "MAC Address 2",
+            "remarks": "Second MAC address for the network adapter. The MAC (Media Access Control) address uniquely identifies each node of a network.",
+            "sameAsAttribute": "NETMACADDR2",
+            "sameAsObject": "DPANETADAPTER",
+            "viewColumnName": "NETMACADDR2",
+            "tableName": "DPANETADAPTER",
+            "tableColumnName": "NETMACADDR2"
+        },
+        {
+            "attributeName": "CHIPSET",
+            "required": false,
+            "persistent": true,
+            "title": "Chipset",
+            "remarks": "Chipset on the network adapter. The chipset is the collection of integrated circuits that enable the adapter to function.",
+            "sameAsAttribute": "CHIPSET",
+            "sameAsObject": "DPANETADAPTER",
+            "viewColumnName": "CHIPSET",
+            "tableName": "DPANETADAPTER",
+            "tableColumnName": "CHIPSET"
+        },
+        {
+            "attributeName": "FIRMWAREVERSION",
+            "required": false,
+            "persistent": true,
+            "title": "Firmware Version",
+            "remarks": "Firmware version for the network adapter. Firmware is software (data or program instructions) stored on integrated circuits in read only memory (ROM).",
+            "sameAsAttribute": "FIRMWAREVERSION",
+            "sameAsObject": "DPANETADAPTER",
+            "viewColumnName": "FIRMWAREVERSION",
+            "tableName": "DPANETADAPTER",
+            "tableColumnName": "FIRMWAREVERSION"
+        },
+        {
+            "attributeName": "SERIALNUMBER",
+            "required": false,
+            "persistent": true,
+            "title": "Serial Number",
+            "remarks": "Serial number of the network adapter.",
+            "sameAsAttribute": "SERIALNUMBER",
+            "sameAsObject": "DPANETADAPTER",
+            "viewColumnName": "SERIALNUMBER",
+            "tableName": "DPANETADAPTER",
+            "tableColumnName": "SERIALNUMBER"
+        },
+        {
+            "attributeName": "ASSETTAG",
+            "required": false,
+            "persistent": true,
+            "title": "Asset Tag",
+            "remarks": "Asset tag of the network adapter.",
+            "sameAsAttribute": "ASSETTAG",
+            "sameAsObject": "DPANETADAPTER",
+            "viewColumnName": "ASSETTAG",
+            "tableName": "DPANETADAPTER",
+            "tableColumnName": "ASSETTAG"
+        },
+        {
+            "attributeName": "DESCRIPTION",
+            "required": false,
+            "persistent": true,
+            "title": "Description",
+            "remarks": "Describes the network adapter. This description contains relevant data that is not provided in other fields or that identifies the adapter in more detail. The data in this field is dependent on the discovery tool used to collect the adapter information; the field might be empty or might consist of several concatenated pieces of information.",
+            "sameAsAttribute": "DESCRIPTION",
+            "sameAsObject": "DPANETADAPTER",
+            "viewColumnName": "DESCRIPTION",
+            "tableName": "DPANETADAPTER",
+            "tableColumnName": "DESCRIPTION"
+        },
+        {
+            "attributeName": "CREATEDATE",
+            "required": true,
+            "persistent": true,
+            "title": "Created Date",
+            "remarks": "Create Date",
+            "sameAsAttribute": "CREATEDATE",
+            "sameAsObject": "DPANETADAPTER",
+            "viewColumnName": "CREATEDATE",
+            "tableName": "DPANETADAPTER",
+            "tableColumnName": "CREATEDATE"
+        },
+        {
+            "attributeName": "CHANGEDATE",
+            "required": true,
+            "persistent": true,
+            "title": "Changed Date",
+            "remarks": "Change Date",
+            "sameAsAttribute": "CHANGEDATE",
+            "sameAsObject": "DPANETADAPTER",
+            "viewColumnName": "CHANGEDATE",
+            "tableName": "DPANETADAPTER",
+            "tableColumnName": "CHANGEDATE"
+        },
+        {
+            "attributeName": "VBANDWIDTH",
+            "required": false,
+            "persistent": false,
+            "title": "Bandwidth",
+            "remarks": "Adapter bandwidth. Bandwidth is the amount of data that can be transmitted in a given amount of time, measured in bits per second.",
+            "sameAsAttribute": "VBANDWIDTH",
+            "sameAsObject": "DPANETADAPTER"
+        },
+        {
+            "attributeName": "CMANUFACTURER",
+            "required": true,
+            "persistent": true,
+            "title": "Manufacturer",
+            "remarks": "Manufacturer of the network adapter.",
+            "sameAsAttribute": "MANUFACTURERNAME",
+            "sameAsObject": "DPAMMANUVARIANT",
+            "viewColumnName": "CMANUFACTURER",
+            "tableName": "DPAMMANUVARIANT",
+            "tableColumnName": "MANUFACTURERNAME"
+        },
+        {
+            "attributeName": "MANUFACTURER",
+            "required": true,
+            "persistent": true,
+            "title": "Manufacturer",
+            "remarks": "Manufacturer",
+            "sameAsAttribute": null,
+            "sameAsObject": null,
+            "viewColumnName": "MANUFACTURER",
+            "tableName": "DPANETADAPTER",
+            "tableColumnName": "MANUFACTURER"
+        },
+        {
+            "attributeName": "MANUFACTURERVAR",
+            "required": true,
+            "persistent": true,
+            "title": "Manufacturer Variant",
+            "remarks": "Manufacturer Var",
+            "sameAsAttribute": "MANUFACTURERVAR",
+            "sameAsObject": "DPAMMANUVARIANT",
+            "viewColumnName": "MANUFACTURERVAR",
+            "tableName": "DPAMMANUVARIANT",
+            "tableColumnName": "MANUFACTURERVAR"
+        },
+        {
+            "attributeName": "DPAMMANUVARIANTID",
+            "required": true,
+            "persistent": true,
+            "title": "Manufacturer Variant Id",
+            "remarks": "Unique Identifier",
+            "sameAsAttribute": "DPAMMANUVARIANTID",
+            "sameAsObject": "DPAMMANUVARIANT",
+            "viewColumnName": "DPAMMANUVARIANTID",
+            "tableName": "DPAMMANUVARIANT",
+            "tableColumnName": "DPAMMANUVARIANTID"
+        },
+        {
+            "attributeName": "CMAKEMODEL",
+            "required": true,
+            "persistent": true,
+            "title": "Make/Model",
+            "remarks": "Make or model of the network adapter. Sometimes the make or model field contains the name of the manufacturer of the adapter.",
+            "sameAsAttribute": "ADAPTERNAME",
+            "sameAsObject": "DPAMADPTVARIANT",
+            "viewColumnName": "CMAKEMODEL",
+            "tableName": "DPAMADPTVARIANT",
+            "tableColumnName": "ADAPTERNAME"
+        },
+        {
+            "attributeName": "MAKEMODEL",
+            "required": true,
+            "persistent": true,
+            "title": "Make/Model",
+            "remarks": "Make/Model",
+            "sameAsAttribute": null,
+            "sameAsObject": null,
+            "viewColumnName": "MAKEMODEL",
+            "tableName": "DPANETADAPTER",
+            "tableColumnName": "MAKEMODEL"
+        },
+        {
+            "attributeName": "ADAPTERVARIANT",
+            "required": true,
+            "persistent": true,
+            "title": "Adapter Variant",
+            "remarks": "Adapter Variant",
+            "sameAsAttribute": "ADAPTERVARIANT",
+            "sameAsObject": "DPAMADPTVARIANT",
+            "viewColumnName": "ADAPTERVARIANT",
+            "tableName": "DPAMADPTVARIANT",
+            "tableColumnName": "ADAPTERVARIANT"
+        },
+        {
+            "attributeName": "DPAMADPTVARIANTID",
+            "required": true,
+            "persistent": true,
+            "title": "Adapter Variant Id",
+            "remarks": "Unique Identifier",
+            "sameAsAttribute": "DPAMADPTVARIANTID",
+            "sameAsObject": "DPAMADPTVARIANT",
+            "viewColumnName": "DPAMADPTVARIANTID",
+            "tableName": "DPAMADPTVARIANT",
+            "tableColumnName": "DPAMADPTVARIANTID"
+        }
+    ],
+    "viewinfo": {
+        "autosect": false,
+        "viewwhere": "dpanetadapter.manufacturer=dpammanuvariant.manufacturervar and dpanetadapter.makemodel=dpamadptvariant.adaptervariant",
+        "viewselect": "select dpanetadapter.nodeid,dpanetadapter.adapterid,dpanetadapter.adaptertype,dpanetadapter.bandwidth, dpanetadapter.bandwidthunit,dpanetadapter.protocol,dpanetadapter.port,dpanetadapter.netmacaddr1,dpanetadapter.netmacaddr2, dpanetadapter.chipset,dpanetadapter.firmwareversion,dpanetadapter.serialnumber,dpanetadapter.assettag,dpanetadapter.makemodel, dpanetadapter.manufacturer,dpanetadapter.description,dpanetadapter.createdate,dpanetadapter.changedate,dpanetadapter.rowstamp, dpammanuvariant.manufacturername as cmanufacturer,dpammanuvariant.manufacturervar,dpammanuvariant.dpammanuvariantid, dpammanuvariant.rowstamp as rowstamp1, dpamadptvariant.adaptername as cmakemodel,dpamadptvariant.adaptervariant, dpamadptvariant.dpamadptvariantid,dpamadptvariant.rowstamp as rowstamp2",
+        "viewfrom": "from dpanetadapter,dpammanuvariant,dpamadptvariant"
+    },
+    "outgoingRelationships": [],
+    "incomingRelationships": [
+        {
+            "name": "DPANETADAPTER",
+            "source": "DPACOMPUTER",
+            "remarks": null,
+            "whereClause": "nodeid=:nodeid",
+            "cardinality": "UNDEFINED"
+        }
+    ]
+}

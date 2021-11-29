@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="../../css/style.css">
+<title>WMASSIGNMENT</title>
+</head>
+<body>
+<div id="container">
+    <div id="menu01">
+        <ul class="navbar">
+            <li><a href="../../index.html">Table List</a>
+            <li><a href="WMASSIGNMENT_view.html">View Details</a>
+            <li><a href="WMASSIGNMENT_MaxRel.html">Maximo Relationships </a>
+            <li><a href="WMASSIGNMENT_print.html">Printer View</a>
+            <li><a href="WMASSIGNMENT_ER.dbc">Script of Unverified</a>
+        </ul>
+    </div>
+    <div id="MaximoObjectsInfo">
+    </div>
+    <div id="MaximoLogicalRelationshipsInfo"  style="overflow-y:scroll" >
+    </div>
+    <div id="MaximoObjectsColumnsInfo"  style="overflow-y:scroll" >
+    </div>
+</div>
+
+<script src="../../js/mo.js"></script>
+<script src="../../js/filtertable.js"></script>
+<script src="WMASSIGNMENT.js"></script>
+<script>
+window.onload = createInfo
+var mobjs = JSON.stringify(mos);
+var obj = JSON.parse(mobjs);
+
+function createInfo() {
+
+    createMaximoObjectInfo();
+
+    createLogicalRelationshipInfo();
+
+    createColumnsInfo();
+
+    tablesLoaded = true;
+    filtertable.init();
+}
+
+
+</script>
+</body>
+</html>

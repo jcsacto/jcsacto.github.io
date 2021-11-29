@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="../../css/style.columns.css">
+<title>POCHANGESTATUS</title>
+</head>
+<body>
+<div id="container">
+    <div id="menu01">
+        <ul class="navbar">
+            <li><a href="../../index.html">Table List</a>
+            <li><a href="POCHANGESTATUS_MaxRel.html">Maximo Relationships </a>
+            <li><a href="POCHANGESTATUS_print.html">Printer View</a>
+            <li><a href="POCHANGESTATUS_ER.dbc">Script of Unverified</a>
+        </ul>
+    </div>
+    <div id="MaximoObjectsInfo">
+    </div>
+    <div id="MaximoLogicalRelationshipsInfo"  style="overflow-y:scroll" >
+    </div>
+    <div id="MaximoObjectsColumnsInfo"  style="overflow-y:scroll" >
+    </div>
+</div>
+
+<script src="../../js/mo.js"></script>
+<script src="../../js/filtertable.js"></script>
+<script src="POCHANGESTATUS.js"></script>
+<script>
+window.onload = createInfo
+var mobjs = JSON.stringify(mos);
+var obj = JSON.parse(mobjs);
+
+function createInfo() {
+
+    createMaximoObjectInfo();
+
+    createLogicalRelationshipInfo();
+
+    createColumnsInfo();
+
+    tablesLoaded = true;
+    filtertable.init();
+}
+
+
+</script>
+</body>
+</html>
